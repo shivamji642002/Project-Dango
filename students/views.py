@@ -912,6 +912,8 @@ def enrollment_list_view(request):
 
     return render(request, 'enrollment_list.html', context)
 
+def first_page(request):
+    return render(request, 'students/first_page.html')
 
 def main_page(request):
     return render(request, "main_page.html")

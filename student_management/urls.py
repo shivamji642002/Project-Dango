@@ -36,7 +36,9 @@ from rest_framework.authtoken.views import obtain_auth_token
 
 urlpatterns = [
     # Default root → main_page (not redirect to /api/)
-    path('', views.main_page, name='main_page'),
+    # path('', views.main_page, name='main_page'),
+    path('', views.first_page, name='first_page'),    # Default → first page
+    path('main/', views.main_page, name='main_page'), # Main page
 
     path('admin/', admin.site.urls),
     path('api/', include('students.urls')),

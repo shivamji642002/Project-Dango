@@ -7,6 +7,7 @@ urlpatterns = [
     # ============================================================================
     # WEB INTERFACE ROUTES
     # ============================================================================
+    path("first/", views.first_page, name="first_page"),  # 👈 add here
     path("", views.main_page, name="main_page"),
     path('dashboard/', views.dashboard_view, name='dashboard'),
     path('web/students/', views.student_list_view, name='student_list'),
